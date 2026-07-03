@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>All Blue - Home</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* NAVBAR */
+.hero-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 8%;
+}
+
+.logo{
+  color: white;
+  font-size:22px;
+  font-weight:bold;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.hero-nav nav a{
+  color:white;
+  margin:0 18px;
+  text-decoration:none;
+  font-size:16px;
+}
+
+.hero-nav nav a:hover{
+  color:#ff5a00;
+}
+
+.trip-btn{
+  background:#ff5a00;
+  color:white;
+  border:none;
+  padding:12px 26px;
+  border-radius:10px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.trip-btn:hover{
+  background:#e04f00;
+}
+
+
+
+ header{
+  position: absolute;
+  width:100%; 
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:10;
+ 
+  
+ }
+
+
+.one {
+height: 100vh;
+background: url(Images/beach.jpg) no-repeat center center/cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: white;
+padding: 0 50px;
+position: relative;
+}
+
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(99, 76, 76, 0.4);
+}
+a{
+text-decoration: none;
+
+}
+ul{
+display: flex;
+color: white;
+}
+.content {
+position: relative;
+}
+
+
+h1 {
+font-size: 4rem;
+font-weight: bold;
+line-height: 1.2;
+margin-left: 100px;
+}
+h3 {
+font-size: 17px;
+font-family: "Nunito Sans", sans-serif;
+font-weight: 200;
+width: 258px;
+height: 30px;
+padding-left: 24px;
+padding-top: 6px;
+background-color: #b2e3fe;
+color: #fb5607;
+border-radius: 20px;
+margin-left: 42%;
+margin-top: 120px;
+   
+}
+p {
+margin-top: 15px;
+font-size: 1.2rem;
+max-width: 600px;
+margin-left: 100px;
+}
+
+
+.btn-container {
+margin-top: 50px;
+margin-left: 100px;
+}
+
+
+.btn {
+padding: 12px 25px;
+background:  #fb5607;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 1.1rem;
+cursor: pointer;
+margin-right: 15px;
+text-decoration: none;
+}
+.btn:hover {
+background: #f06a10;
+}
+
+            /* Destination pic */
+.img-content>img{
+height:555px;
+width:380px;
+border-radius: 25% 25% 25% 25%;
+}
+.img-container{
+display: flex;
+gap: 5px;
+margin-left: 150px;
+margin-top: 70px;
+gap: 20px;
+position:relative;
+}
+.circle{
+background:white;
+height: 250px;
+    width: 250px;
+    margin-left: 65px;
+    border-radius: 100%;
+    margin-top: -110px;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    
+}
+     
+ .stars{
+    position: relative;
+    width: 200px;
+    height: 100px;
+ }
+ .stars span{
+    position: absolute;
+    font-size: 32px;
+    color: #f06a10;
+    left: 104px;
+    margin-top: 25px;
+    transform-origin:   11px 160px ;
+ }
+ #big{
+    font-size: 45px;
+    margin-top: 10px;
+    
+ }
+ .s1{ transform: rotate(-18deg);}
+ .s2{ transform: rotate(-8deg);}
+ .s3{ transform: rotate(0deg);}
+ .s4{ transform: rotate(12deg);}
+ .s5{ transform: rotate(22deg);}
+
+ h4{
+   font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+    width: 120px;
+    height: 30px;
+    padding-left: 26px;
+    padding-top: 6px;
+    background-color: #b2e3fe;
+    color: #fb5607;
+    border-radius: 20px;
+    margin-left: 64px;
+    margin-top: 90px;
+    position: absolute;
+ }
+ #aus{
+     font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+    width: 130px;
+    height: 30px;
+    padding-left: 22px;
+    padding-top: 6px;
+    background-color: #b2e3fe;
+    color: #fb5607;
+    border-radius: 20px;
+    margin-left: 63px;
+    margin-top: 90px;
+    position: absolute;
+ }
+ 
+ .c1{
+    margin-top: 140PX;
+    margin-left: 50PX;
+    z-index: 100px;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+ .c2{
+    margin-top: 140PX;
+    margin-left: 90PX;
+    z-index: 100px;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .c3{
+    margin-top: 140PX;
+    margin-left: 79PX;
+    z-index: 100px;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .Rs{
+      font-size: 15px;
+      margin-top: 200px;
+      margin-left: -118px;
+      color: rgb(51, 51, 51);
+    }
+
+
+    /* About  */
+
+    .about-us{
+      margin-top: 250px;
+      background-color:rgb(241, 241, 250) ;
+    }
+
+    .about-container {
+  display: flex;
+  align-items: center;       
+  gap: 30px;                 
+  padding: 20px;
+}
+
+.about-img { 
+  margin-left: 245px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.about-contentbox{
+  margin-top: -400px;
+  margin-bottom: 100px;
+}
+
+ .about-text p{
+        font-size: 16px;
+        line-height: 1.5;
+        color: rgb(56, 55, 55);
+        width: 650px;
+        margin-left: 50px;
+}
+ .mini-container{
+  display: flex;
+  align-items: center;       
+  gap: 30px;                 
+  padding: 20px;
+ }
+ .about-mini-img{
+  height: 200px;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 30px;
+  border-radius: 30px ;
+ }
+.mini-container i{
+      padding: 8px;
+      font-size: 18px;
+     
+ }
+ .mini-container button{
+  background-color:#fb5607;
+  color:white ;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+   border-radius: 10px;
+   font-weight: 200;
+   height: 50px;
+   width: 150px;
+   margin-top: 190px;
+  margin-left: -360px;
+  font-size: 17
+  px;
+ }
+ .custom-check {
+  
+  color: #d77a5a;
+  font-size: 22px;
+ }
+
+
+  /* Destinations */
+
+.destination-container button{
+background-color:#fb5607;
+  color:white ;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+   border-radius: 10px;
+   font-weight: 200;
+   height: 45px;
+   width: 180px;
+   margin-top: 40px;
+  margin-left: 200px;
+  font-size: 16px;
+  
+}
+.destination {
+  position: relative;
+  z-index: 1;
+}
+.img-box {
+  transform: rotateY(90deg);
+  opacity: 0;
+  backface-visibility: hidden;
+}
+
+.img-box.animate {
+  animation: flip 1s ease forwards;
+}
+
+@keyframes flip {
+  from { transform: rotateY(90deg); opacity: 0; }
+  to   { transform: rotateY(0deg);  opacity: 1; }
+}
+
+
+/* Image stays untouched */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px;
+}
+
+/* Text inside image */
+.img-text {
+  position: absolute;
+  margin-left: 0px;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+
+/* why us */
+
+.why-container {
+    width: 500px;
+    background-color: #fff;
+    position: relative;
+    padding: 50px;
+    border-radius: 40px;
+    font-family: "Georgia", serif;
+    margin-top: -260px;
+    margin-left: 100px;
+    height: 710px;
+}
+
+.why-item {
+    margin-bottom: 0px;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.why-item h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 0px;
+    color: black;
+    margin-left: -20px;
+    background-color: transparent;
+}
+
+.why-item p {
+    color: #444;
+    line-height: 1.7;
+    font-size: 17px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.why-item hr {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    margin: 20px 0;
+}
+
+/* Planning */
+
+.plan{
+  background-color: #fb5607;
+  margin-top: 170px;
+  height: 500px;
+}
+.plan-content p{
+  font-size: 60px;
+  padding-top: 130px;
+  padding-left: 60px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.plan button{
+background-color:white;
+  color:#fb5607;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+   border-radius: 10px;
+   font-weight: 200;
+   height: 45px;
+   width: 180px;
+   margin-top: 40px;
+  margin-left: 160px;
+  font-size: 16px;
+  
+}
+footer{
+    background:#061922;
+    color:#fff;
+    padding:70px 0 30px;
+   
+    
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-logo{
+    font-family:'Playfair Display', serif;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.footer-text{
+    font-size:14px;
+    line-height:1.7;
+    color:#cbd5e1;
+}
+
+.footer-title{
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.footer-links a{
+    display:block;
+    color:#cbd5e1;
+    font-size:14px;
+    margin-bottom:12px;
+    text-decoration:none;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:14px;
+    font-size:14px;
+}
+
+.footer-bottom{
+    border-top:1px solid #1e293b;
+    margin-top:40px;
+    padding-top:20px;
+    text-align:center;
+    font-size:13px;
+    color:#94a3b8;
+}
+
+
+
+</style>
+</head>
+<body>
+    <header class="hero-nav">
+
+<div class="logo">
+<i class="fa-solid fa-mountain-sun"></i>
+<span>ALL BLUE</span>
+</div>
+
+<nav>
+<a href="./home.html">Home</a>
+<a href="#about-us">About</a>
+<a href="./packages.html">Packages</a>
+<a href="./contact.html">Contact</a>
+</nav>
+
+<button class="trip-btn">Plan Your Trip</button>
+
+</header>
+
+<section class="one">
+ 
+<div class="overlay"></div>
+<div class="content">
+<h1>Discover Your Favorite<br>Place with Us</h1>
+<p>If you are looking for a perfect holiday experience with memories to cherish you are at the right place. Let us transform your travel dreams into unforgettable memories.</p>
+
+
+<div class="btn-container">
+<a href="./packages.html" class="btn">Start Planning</a>
+
+</div>
+</section>
+
+           <!--  Popular  Destination   -->
+    
+  <h3>POPULAR DESTINATIONS</h3>
+  <H1 style="font-size: 3rem; margin-left: 530px; margin-top: 30px; font-family: 'Times New Roman', Times, serif;">Handpicked Packages </H1>
+  
+  <div class="img-container">
+            <!-- image 1 -->
+    <div class="img-content">  
+      <img src="Images/swiz.jpg" alt="" >
+        <div class="circle"> 
+          <div class="stars">
+            <span class="s1">★</span>
+            <span class="s2">★</span>
+            <span class="s3" id="big">★</span>
+            <span class="s4">★</span>
+            <span class="s5">★</span>
+          </div>
+          <h5 class="c1">Switzerland</h5>
+           <h4>EUROPE</h4>
+           <span class="Rs">From $2,499</span>
+           
+           
+     </div>
+     
+    </div>
+     
+             <!-- image 2 -->
+    <div class="img-content">
+    <img src="Images/spain.jpg" alt="" >
+     <div class="circle"> 
+        <div class="stars">
+            <span class="s1">★</span>
+            <span class="s2">★</span>
+            <span class="s3" id="big">★</span>
+            <span class="s4">★</span>
+            <span class="s5">★</span>
+        </div>
+            <h5 class="c2">Spain</h5>
+            <h4 >EUROPE</h4>
+            <span class="Rs">From $2,399</span>
+      </div>
+    </div>
+                  
+            <!-- image 3 -->
+    <div class="img-content">
+    <img src="Images/a.jpg" alt="" >
+      <div class="circle"> 
+        <div class="stars">
+            <span class="s1">★</span>
+            <span class="s2">★</span>
+            <span class="s3" id="big">★</span>
+            <span class="s4">★</span>
+            <span class="s5">★</span>
+        </div>
+           <h5 class="c3">Sydney</h5>
+           <h4 id="aus">AUSTRALIA</h4>
+           <span class="Rs">From $2,299</span>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="about-us" class="about-us" >
+  <div class="about-container">
+
+    <img src="Images/about.png" alt="" class="about-img">
+
+    <div class="about-contentbox" >
+
+      <!-- Welcome text -->
+      <span style="
+        display: block; 
+        margin-top: 460px;
+        margin-left: 50px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: rgb(241, 93, 48);
+        font-family:'Pacifico' ,cursive;">
+        Welcome to All Blue
+      </span>
+
+      <!-- Main heading -->
+      <span style="
+        display: block;
+        margin-left: 50px;
+        font-size: 55px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+      ">
+        Make Your Tour <br> Memorable and Safe <br> With Us
+      </span>
+  <div class="about-text">
+      <!-- Paragraph 1 -->
+      <p >
+      Travel is more than seeing new places—it’s about creating meaningful and memorable experiences.
+       Every destination has a story, and we help you explore it with ease.
+        Our experienced team designs smooth, personalized trips that match your interests, whether it’s beaches, mountains, or vibrant cities. 
+       <br>
+        At All Blue, we focus on comfort, safety, and authenticity to make every moment special. <br>
+        Explore the world with us—one unforgettable journey at a time.
+      </p>
+  
+
+      
+      </div  >
+            <div class="mini-container">
+              <img src="Images/aimg.jpg" alt="" class="about-mini-img">
+              <div id="icon">
+                <i class="fa-regular fa-circle-check custom-check" >
+              <span style="color: rgb(56, 55, 55);">Budget-Friendly</span>
+            </i>
+             <i class="fa-regular fa-circle-check custom-check">
+              <span style="color: rgb(56, 55, 55);">Luxurious Getaways</span>
+            </i>
+             <i class="fa-regular fa-circle-check custom-check">
+              <span style="color: rgb(56, 55, 55);">Trusted Local Guides</span>
+            </i>
+           
+              </div>
+              <a href="./contact.html"><button>Learn More ➜</button></a>
+               
+            </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="destination" >
+
+
+  <div class="destination-container">
+    <span style="
+        display: block; 
+        margin-top: 100px;
+        margin-left: 200px;
+        font-size: 25px;
+        margin-bottom: 10px; 
+        color: rgb(241, 93, 48);
+        font-family:'Pacifico' ,cursive;
+      ">
+        Choose Your Place
+      </span>
+
+       <span style="
+        display: block;
+        margin-left: 200px;
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 25px;
+        font-family: 'Times New Roman';
+        color: black;
+      ">
+        Popular <br> Destinations
+      </span>
+      <p style="
+          font-size: 16px;
+          line-height: 1.5;
+          color: rgb(56, 55, 55);
+          width: 650px;
+          margin-left: 200px;">
+        Join us as we explore the wonders of the globe,
+        <br> It's time to start your adventure</p>
+        <a href="./packages.html"><button>Find Packages ➜</button></a>
+         
+
+
+        <div class="destination-img">
+
+         <div class="i1">
+  <div class="img-box" style="height:420px; width:350px; margin-left:610px; margin-top:-350px; position: absolute;">
+    <img src="Images/bali.jpg" alt="">
+    <p class="img-text">Bali</p>
+  </div>
+</div>
+
+<div class="i2">
+  <div class="img-box" style="height:420px; width:350px; margin-left:1000px; margin-top:-350px; position: absolute;">
+    <img src="Images/france.webp" alt="">
+    <p class="img-text">France</p>
+  </div>
+</div>
+
+<div class="i3">
+  <div class="img-box" style="height:420px; width:350px; margin-left:610px; margin-top:120px; position: absolute;">
+    <img src="Images/londonn.jpg" alt="">
+    <p class="img-text">London</p>
+  </div>
+</div>
+
+<div class="i4">
+  <div class="img-box" style="height:420px; width:350px; margin-left:1000px; margin-top:120px; position: absolute;">
+    <img src="Images/thailand.jpg" alt="">
+    <p class="img-text">Thailand</p>
+  </div>
+</div>
+
+<div class="i5">
+  <div class="img-box" style="height:490px; width:370px; margin-left:200px; margin-top:50px; position: absolute;">
+    <img src="Images/taj-mahal.jpg" alt="">
+    <p class="img-text">New Delhi</p>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+<section class="why-us">
+   <div>
+     <img src="Images/whyus1.jpg" alt="" width="100%" height="100%" style=" margin-top: 670px;">
+     <p style="background: rgba(255, 255, 255, 0.2);color:white; margin-top: -500px; margin-left: 970px; font-size: 18px; position: relative; width: 128px; height: 37px; padding: 10px; padding-left: 25px; border-radius: 20px;">WHY US</p>
+     <p style="position: relative; color: white; font-family: 'Times New Roman', Times, serif; font-size: 60px; margin-left:970px ;">Tailored <br>Luxury <br> Experience</p>
+     <div class="why-container">
+    <div class="why-item">
+        <div class="icon">✈️</div>
+        <h3>Customized Packages</h3>
+        <p>Tailor-made itineraries to suit your preferences and interests, ensuring a unique travel experience every time.</p>
+        <hr>
+    </div>
+
+    <div class="why-item">
+        <div class="icon">🧗</div>
+        <h3>Adventure Tours</h3>
+        <p>Explore thrilling destinations and activities, from mountain trekking to scuba diving, for the adrenaline seekers.</p>
+        <hr>
+    </div>
+
+    <div class="why-item">
+        <div class="icon">🛁</div>
+        <h3>Luxury Vacations</h3>
+        <p>Indulge in opulent accommodations and exclusive experiences, designed for those seeking a lavish escape.</p>
+    </div>
+</div>
+
+</section>
+
+
+<section class="plan">
+ 
+   <div>
+    <img src="Images/tra.png" alt=" " height="600px" width="400px" style="margin-left: 960px; margin-top: -100px; position: absolute;">
+   </div>
+    <div class="plan-content">
+      <p >Shall We Begin Your Journey?</p>
+    </div>
+    <p style="font-size: 20px; color: #ffffff; margin-left: 160px;">You’ll enjoy high-quality travel experiences,
+all planned to match your budget.</p>
+<a href="./packages.html"><button>Start Planning ➜</button></a>
+</section>
+  
+<!-- FOOTER -->
+<footer>
+<div class="footer-container">
+
+    <div>
+        <div class="footer-logo">ALL BLUE</div>
+        <div class="footer-text">
+            Your trusted partner for extraordinary travel experiences since 2015.
+        </div>
+    </div>
+
+    <div>
+        <div class="footer-title">Quick Links</div>
+        <div class="footer-links">
+            <a href="./home.html">Home</a>
+            <a href="#about-us">About</a>
+            <a href="./packages.html">Packages</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="footer-title">Contact</div>
+        <div class="contact-item">📍 03 West zoro Street Kings Mountain, India</div>
+        <div class="contact-item">📞 +91 6369646883</div>
+        <div class="contact-item">✉ allblue@email.com</div>
+    </div>
+
+    <div>
+        <div class="footer-title">Follow Us</div>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    Copyright © 2026 Travel Agency
+</div>
+</footer>
+
+
+
+
+
+  
+
+</body>
+
+
+<script>
+  const section = document.querySelector('.destination');
+  const boxes = document.querySelectorAll('.img-box');
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        boxes.forEach((box, i) => {
+          setTimeout(() => box.classList.add('animate'), i * 200); // stagger optional
+        });
+        obs.unobserve(section); // animation only once
+      }
+    });
+  }, { threshold: 0.3 });
+
+  obs.observe(section);
+</script>
+
+
+</html>

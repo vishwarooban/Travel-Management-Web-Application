@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>All Blue - Contact</title>
+
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+/* ================= HERO SECTION ================= */
+
+.contact-hero{
+  height:100vh;
+  background:
+   linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+   url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
+   center/cover no-repeat;
+  color:white;
+}
+
+/* NAVBAR */
+.hero-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 8%;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.hero-nav nav a{
+  color:white;
+  margin:0 18px;
+  text-decoration:none;
+  font-size:16px;
+}
+
+.hero-nav nav a:hover{
+  color:#ff5a00;
+}
+
+.trip-btn{
+  background:#ff5a00;
+  color:white;
+  border:none;
+  padding:12px 26px;
+  border-radius:10px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.trip-btn:hover{
+  background:#e04f00;
+}
+
+/* HERO CONTENT */
+.hero-content{
+  height:calc(100vh - 90px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-pill{
+  background:rgba(255,255,255,0.25);
+  padding:10px 25px;
+  border-radius:30px;
+  letter-spacing:1px;
+  margin-bottom:25px;
+}
+
+.hero-content h1{
+  font-size:70px;
+  line-height:1.2;
+  font-family:"Times New Roman", serif;
+  margin-bottom:30px;
+}
+
+/* FEATURES */
+.hero-features{
+  display:flex;
+  gap:30px;
+  font-size:16px;
+}
+
+.hero-features i{
+  margin-right:8px;
+}
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page{
+  width:100%;
+  padding:80px 8%;
+}
+
+/* TOP SECTION */
+.contact-top{
+  display:flex;
+  gap:50px;
+}
+
+/* FORM */
+.contact-form{
+  width:55%;
+}
+
+.contact-form label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  margin-bottom:25px;
+  font-size:16px;
+}
+
+.contact-form textarea{
+  height:140px;
+  resize:none;
+}
+
+.contact-form button{
+  background:#ff5a00;
+  color:white;
+  border:none;
+  padding:12px 35px;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.contact-form button:hover{
+  background:#e04f00;
+}
+
+/* IMAGE */
+.contact-image{
+  width:45%;
+  height:500px;
+  background:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+   center/cover no-repeat;
+  border-radius:60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.contact-image h1{
+  color:white;
+  font-size:60px;
+  font-family:"Times New Roman", serif;
+}
+
+/* BOTTOM CARDS */
+.contact-info{
+  margin-top:80px;
+  display:flex;
+  gap:30px;
+}
+
+.info-card{
+  flex:1;
+  background:#fff6eb;
+  padding:35px;
+  border-radius:30px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.info-card i{
+  background:#ff5a00;
+  color:white;
+  font-size:22px;
+  padding:15px;
+  border-radius:50%;
+}
+
+.info-card h3{
+  font-size:22px;
+  margin-bottom:6px;
+}
+
+.info-card p{
+  color:#555;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  .hero-nav{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .hero-content h1{
+    font-size:45px;
+  }
+
+  .hero-features{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .contact-top{
+    flex-direction:column;
+  }
+
+  .contact-form,
+  .contact-image{
+    width:100%;
+  }
+
+  .contact-info{
+    flex-direction:column;
+  }
+
+}
+/* Planning */
+
+.plan{
+  background-color: #fb5607;
+  margin-top: 170px;
+  height: 500px;
+}
+.plan-content p{
+  font-size: 60px;
+  padding-top: 130px;
+  padding-left: 60px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.plan button{
+background-color:white;
+  color:#fb5607;
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+   border-radius: 10px;
+   font-weight: 200;
+   height: 45px;
+   width: 180px;
+   margin-top: 40px;
+  margin-left: 160px;
+  font-size: 16px;
+  
+}
+footer{
+    background:#061922;
+    color:#fff;
+    padding:70px 0 30px;
+   
+    
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-logo{
+    font-family:'Playfair Display', serif;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.footer-text{
+    font-size:14px;
+    line-height:1.7;
+    color:#cbd5e1;
+}
+
+.footer-title{
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.footer-links a{
+    display:block;
+    color:#cbd5e1;
+    font-size:14px;
+    margin-bottom:12px;
+    text-decoration:none;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:14px;
+    font-size:14px;
+}
+
+.footer-bottom{
+    border-top:1px solid #1e293b;
+    margin-top:40px;
+    padding-top:20px;
+    text-align:center;
+    font-size:13px;
+    color:#94a3b8;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- ========== HERO ========= -->
+<section class="contact-hero">
+
+<header class="hero-nav">
+
+<div class="logo">
+<i class="fa-solid fa-mountain-sun"></i>
+<span>ALL BLUE</span>
+</div>
+
+<nav>
+<a href="./home.html">Home</a>
+<a href="./home.html">About</a>
+<a href="./packages.html">Packages</a>
+<a href="./contact.html">Contact</a>
+</nav>
+
+<button class="trip-btn">Plan Your Trip</button>
+
+</header>
+
+<div class="hero-content">
+
+<span class="hero-pill">SAY HELLO TO NEW DESTINATIONS</span>
+
+<h1>
+Ready to Explore?<br>
+Contact Us!
+</h1>
+
+<div class="hero-features">
+<span><i class="fa-regular fa-circle-check"></i> Trusted Partner</span>
+<span><i class="fa-solid fa-headphones"></i> 24/7 Support</span>
+<span><i class="fa-solid fa-star"></i> Best Price Guarantee</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- ========== CONTACT ========= -->
+<section id="contact" class="contact-page">
+
+<div class="contact-top">
+
+<!-- FORM -->
+<div class="contact-form">
+<form action="/AllBlueTravel/ContactServlet" method="post">
+<label>Name *</label>
+<input type="text" name="name" required>
+
+<label>Email *</label>
+<input type="email" name="email" required>
+
+<label>Phone *</label>
+<input type="text"name="phone" required>
+
+<label>Your Message *</label>
+<textarea name="message" required></textarea>
+
+<button type="submit">Submit</button>
+</form>
+</div>
+
+<!-- IMAGE -->
+<div class="contact-image">
+<h1>Explore</h1>
+</div>
+
+</div>
+
+<!-- INFO CARDS -->
+<div class="contact-info">
+
+<div class="info-card">
+<i class="fa-solid fa-location-dot"></i>
+<div>
+<h3>Address</h3>
+<p>03 West zoro Street Kings Mountain, India</p>
+</div>
+</div>
+
+<div class="info-card">
+<i class="fa-solid fa-phone"></i>
+<div>
+<h3>Phone</h3>
+<p>+91 6369646883</p>
+</div>
+</div>
+
+<div class="info-card">
+<i class="fa-solid fa-envelope"></i>
+<div>
+<h3>Email</h3>
+<p>allblue@email.com</p>
+</div>
+</div>
+
+</div>
+
+</section>
+<section class="plan">
+ 
+   <div>
+    <img src="./tra.png" alt=" " height="600px" width="400px" style="margin-left: 960px; margin-top: -100px; position: absolute;">
+   </div>
+    <div class="plan-content">
+      <p >Shall We Begin Your Journey?</p>
+    </div>
+    <p style="font-size: 20px; color: #ffffff; margin-left: 160px;">You’ll enjoy high-quality travel experiences,
+all planned to match your budget.</p>
+<a href="./packages.html"><button>Start Planning ➜</button></a>
+</section>
+  
+<!-- FOOTER -->
+<footer>
+<div class="footer-container">
+
+    <div>
+        <div class="footer-logo">ALL BLUE</div>
+        <div class="footer-text">
+            Your trusted partner for extraordinary travel experiences since 2015.
+        </div>
+    </div>
+
+    <div>
+        <div class="footer-title">Quick Links</div>
+        <div class="footer-links">
+            <a href="./home.html">Home</a>
+            <a href="./home.html">About</a>
+            <a href="./packages.html">Packages</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="footer-title">Contact</div>
+        <div class="contact-item">📍 03 West zoro Street Kings Mountain, India</div>
+        <div class="contact-item">📞 +91 6369646883</div>
+        <div class="contact-item">✉ allblue@email.com</div>
+    </div>
+
+    <div>
+        <div class="footer-title">Follow Us</div>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    Copyright © 2026 Travel Agency
+</div>
+</footer>
+
+
+</body>
+</html>

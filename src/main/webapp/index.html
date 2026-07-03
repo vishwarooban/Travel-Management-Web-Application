@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Blue - Login</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+    margin:0;
+    background-color: rgb(42, 140, 244);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    width:900px;
+    display:flex;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* LEFT IMAGE */
+.image-section{
+    width:50%;
+}
+
+.image-section img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* RIGHT FORM */
+.form-section{
+    width:50%;
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+h1{
+    text-align:center;
+    color:rgb(42,140,244);
+    margin-bottom:5px;
+}
+
+h5{
+    text-align:center;
+    color:gray;
+    margin-bottom:30px;
+}
+
+.input{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input label{
+    margin-bottom:5px;
+    color:#007bff;
+    font-size:14px;
+}
+
+.input input{
+    padding:10px;
+    border:1px solid #29a0db;
+    border-radius:8px;
+    font-size:14px;
+    outline:none;
+}
+
+.input input:focus{
+    border-color:#007bff;
+}
+
+.btn{
+    width:100%;
+    padding:12px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+.toggle-btn{
+    position:absolute;
+    right:15px;
+    top:35px;
+    cursor:pointer;
+    font-size:12px;
+    color:black;
+}
+
+.password-wrapper{
+    position:relative;
+}
+
+.error{
+    color:red;
+    font-size:12px;
+    margin-top:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="content">
+
+    <!-- LEFT IMAGE -->
+    <div class="image-section">
+        <img src="solo travel.jpg" alt="Travel">
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="form-section">
+
+        <h1>Welcome</h1>
+        <h5>Login with Email</h5>
+
+        <form action="/AllBlueTravel/LoginServlet"
+              method="post"
+              onsubmit="return validityform()">
+
+            <div class="input">
+                <label>Email Id</label>
+                <input type="text" id="email" name="email" placeholder="Example@email.com">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="input">
+                <label>Mobile No</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter mobile number">
+                <span class="error" id="mobileError"></span>
+            </div>
+
+            <div class="input password-wrapper">
+                <label>Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <span class="toggle-btn" id="togglePassword">Show</span>
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <button class="btn" type="submit">LOGIN</button>
+
+        </form>
+
+    </div>
+</div>
+
+<script>
+
+function validityform(){
+
+    let email=document.getElementById("email").value;
+    let mobile=document.getElementById("mobile").value;
+    let password=document.getElementById("password").value;
+
+    let emailError=document.getElementById("emailError");
+    let mobileError=document.getElementById("mobileError");
+    let passwordError=document.getElementById("passwordError");
+
+    emailError.textContent="";
+    mobileError.textContent="";
+    passwordError.textContent="";
+
+    let isValid=true;
+
+    let emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!email.match(emailPattern)){
+        emailError.textContent="Enter valid email.";
+        isValid=false;
+    }
+
+    let mobilePattern=/^[0-9]{10}$/;
+    if(!mobile.match(mobilePattern)){
+        mobileError.textContent="Mobile must be 10 digits.";
+        isValid=false;
+    }
+
+    let passPattern=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    if(!password.match(passPattern)){
+        passwordError.textContent="Password must be 8+ characters with letters & numbers.";
+        isValid=false;
+    }
+
+    return isValid;
+}
+
+$(document).ready(function(){
+    $("#togglePassword").click(function(){
+        let input=$("#password");
+        if(input.attr("type")==="password"){
+            input.attr("type","text");
+            $(this).text("Hide");
+        }else{
+            input.attr("type","password");
+            $(this).text("Show");
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
