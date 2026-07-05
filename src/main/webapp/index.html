@@ -137,9 +137,9 @@ h5{
         <h1>Welcome</h1>
         <h5>Login with Email</h5>
 
-        <form action="/AllBlueTravel/LoginServlet"
-              method="post"
-              onsubmit="return validityform()">
+        <form id="loginForm"
+      method="post"
+      onsubmit="return validityform()">
 
             <div class="input">
                 <label>Email Id</label>
@@ -218,6 +218,12 @@ $(document).ready(function(){
         }
     });
 });
+//Automatically detect the project path
+document.getElementById("loginForm").action =
+    window.location.pathname.substring(
+        0,
+        window.location.pathname.lastIndexOf("/")
+    ) + "/LoginServlet";
 
 </script>
 

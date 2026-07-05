@@ -386,7 +386,7 @@ Contact Us!
 
 <!-- FORM -->
 <div class="contact-form">
-<form action="/AllBlueTravel/ContactServlet" method="post">
+<form id="contactForm" method="post">
 <label>Name *</label>
 <input type="text" name="name" required>
 
@@ -497,6 +497,16 @@ all planned to match your budget.</p>
     Copyright © 2026 Travel Agency
 </div>
 </footer>
+
+<script>
+
+document.getElementById("contactForm").action =
+    window.location.pathname.substring(
+        0,
+        window.location.pathname.lastIndexOf("/")
+    ) + "/ContactServlet";
+
+</script>
 
 
 </body>
