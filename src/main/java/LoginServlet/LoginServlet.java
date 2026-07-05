@@ -35,15 +35,26 @@ public class LoginServlet extends HttpServlet {
             ps.setString(2, mobile);
             ps.setString(3, password);
 
-            ps.executeUpdate();
+            System.out.println("Email = " + email);
+            System.out.println("Mobile = " + mobile);
+            System.out.println("Password = " + password);
+
+            int rows = ps.executeUpdate();
+
+            System.out.println("Rows inserted = " + rows);
 
             con.close();
 
-            // ✅ Redirect to home page
-            response.sendRedirect("home.html");
+            response.sendRedirect(request.getContextPath() + "/home.html");
 
         } catch (Exception e) {
             e.printStackTrace();
+
+            response.setContentType("text/html");
+            response.getWriter().println("<h2>Error occurred</h2>");
+            response.getWriter().println("<pre>");
+            e.printStackTrace(response.getWriter());
+            response.getWriter().println("</pre>");
         }
     }
 }
