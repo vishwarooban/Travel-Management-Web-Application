@@ -48,7 +48,7 @@ public class ContactServlet extends HttpServlet {
             // Connect Database
             String url =
             	    "jdbc:mysql://" + HOST + ":" + PORT + "/" + DATABASE +
-            	    "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+            	    "?sslMode=VERIFY_IDENTITY&enabledTLSProtocols=TLSv1.2,TLSv1.3";
 
             	con = DriverManager.getConnection(url, USER, PASSWORD);
 
